@@ -1,0 +1,297 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'aboba';
+}
+
+h1, h2, h3, h4, h5, p, span, a, button {font-family: "DM Sans", "DM Sans";}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {background-color: #191919;}
+img {object-fit: cover;}
+
+button {
+    transition: all ease 0.5s;
+}
+
+    button:hover {
+        box-shadow: 3px 3px 5px rgb(9, 22, 196);
+        cursor: pointer;
+    }
+
+header {
+    display: block;
+    min-width: 1440px;
+    height: 119px;
+    background-color: #191919;
+    color: white;
+    align-content: center;
+}
+
+.container {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo {
+    font-size: 33px;
+    float: left;
+    font-weight: 800;
+}
+
+.header-nav {
+    display: inline-flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    float: right;
+    color: white;
+}
+
+    .nav{
+        color: white;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .active {color: #118DA8;}
+
+    .animate {
+        animation-name: animate;
+        animation-duration: 0.8s;
+    }
+    @keyframes animate {
+        from {opacity: 0.4;}
+        to {opacity: 1;}
+    }
+
+.overlay {position: relative;}
+
+
+
+.main-section-left-img {
+    display: block;
+    border-radius: 12px;
+    width: 650px;
+    height: 873px;
+}
+
+.blue-bars {
+    position: absolute;
+    top: -26px;
+    left: -26px;
+    width: 68px;
+    height: 74px;
+    background: url('img/blue-bars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-content {display: inline-flex;}
+
+.right-main-content {
+    align-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.slogan {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+    .slogan-bold-text {font-weight: 700;}
+
+    .slogan-underline {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .slogan-underline::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        min-width: 160px;
+        height: 84px;
+        background: url('img/slang-underline.png') no-repeat;
+        background-size: contain;
+    }
+    
+
+.listen-on {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    margin-top: 74px;
+    padding-left: 22px;
+}
+    
+    .social {
+        padding-top: 16px;
+        width: 32px;
+        height: 32px;
+    }
+
+.latest-episodes__title-block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-episodes-title {
+    max-width: 600px;
+    color: white;
+    font-size: 64px;
+    font: 400;
+    line-height: 79px;
+    letter-spacing: 3px;
+}
+
+.all-episodes {
+    width: 178px;
+    height: 51px;
+    border-radius: 6px;
+    background-color: #118DA8;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    border: none;
+    transition: all ease 0.5s;
+}
+
+.episodes-blocks {
+    margin-top: 40px;
+    color: white;
+}
+
+.episode {
+    min-width: 1300px;
+    background-color: #000000;
+    border-radius: 32px;
+    margin-bottom: 60px;
+}
+
+.episode-container {
+    display: flex; /* Используем flexbox для размещения */
+    padding: 40px;
+    gap: 20px; /* Промежуток между изображением и текстом */
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.episode-cover {
+    width: 389px;
+    object-fit: cover;
+    border-radius: 16px; /* Радиус углов изображения */
+}
+
+.content-container {
+    max-width: 800px; /* Максимальная ширина блока с текстом */
+    padding-left: 26px;
+}
+
+.episode-genre {
+    border-radius: 6px;
+    background-color: #191919;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    border: none;
+    margin-bottom: 48px;
+    min-width: 73px;
+    min-height: 27px;
+    padding: 5px 10px;
+}
+    .episode-genre:hover {
+        box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    }
+
+.episode-count {
+    color: #118DA8; /* Цвет текста */
+    margin-bottom: 18px; /* Отступ снизу */
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.episode-title {
+    font-size: 64px; /* Размер шрифта заголовка */
+    line-height: 70px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 28px; /* Отступ снизу */
+}
+
+.episode-descr {
+    font-size: 16px;
+    margin-bottom: 20px; /* Отступ снизу */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFFB2;
+    margin-bottom: 18px;
+}
+
+.episode-details {
+    background-color: #118DA8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+ 
