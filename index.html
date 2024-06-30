@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <section class="logo"><h2>Castaway</h2></section>
+            <section><a class="logo" href="#home"><h2>Castaway</h2></a></section>
             <section class="header-nav">
-                <a href="#" class="nav active">Home</a>
-                <a href="#" class="nav">Episodes</a>
-                <a href="#" class="nav">About</a>
-                <a href="#" class="nav">Contact</a>
+                <a href="#home" class="nav active">Home</a>
+                <a href="#episodes" class="nav">Episodes</a>
+                <a href="#about" class="nav">About</a>
+                <a href="#contact" class="nav">Contact</a>
             </section>
         </div>
     </header>
@@ -52,7 +52,7 @@
 
             <section>
                 <div class="container">
-                    <div class="latest-episodes">
+                    <div class="latest-episodes" id="episodes">
                         <div class="latest-episodes__title-block">
                             <h2 class="latest-episodes-title">Latest episodes</h2>
                             <div style="align-content: center;"><button class="all-episodes" type="button">View all Episodes</button></div>
@@ -64,7 +64,7 @@
                 </div>
             </section>
 
-            <section class="section-host">
+            <section class="section-host" id="about">
                 <div class="container">
                     <!-- dynamic-cards -->
                 </div>
@@ -98,6 +98,44 @@
                     </div>
                 </div>
             </section>
+
+            <footer>
+                <div class="container">
+                    <div class="footer-wrapper" id="contact">
+                        <div class="about-company">
+                            <a class="footer-logo" href="#home"><h2>Castaway</h2></a>
+                            <div class="social-footer">
+                                <a href = "#"><img class="social-footer-icon" src="img/inst-icon.png" alt="Instagramm"></a>
+                                <a href = "#"><img class="social-footer-icon" src="img/twitter-icon.png" alt="Twitter"></a>
+                                <a href = "#"><img class="social-footer-icon" src="img/facebook-icon.png" alt="Facebook"></a>
+                            </div>
+                        </div>
+                        <div class="footer-link">
+                            <div class="footer-nav">
+                                <a href = "#home" class="footer-nav-link">Home</a>
+                                <a href = "#about" class="footer-nav-link">About</a>
+                                <a href = "#episodes" class="footer-nav-link">Episodes</a>
+                                <a href = "#contact" class="footer-nav-link">Contact</a>
+                            </div>
+                            <div class="footer-license">
+                                <a href="#" class="footer-nav-link">Style Guide</a>
+                                <a href="#" class="footer-nav-link">Instructions</a>
+                                <a href="#" class="footer-nav-link">Changelog</a>
+                                <a href="#" class="footer-nav-link">Credit</a>
+                                <a href="#" class="footer-nav-link">Powered by Webflow</a>
+                                <a href="#" class="footer-nav-link">License</a>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                                <a href = "#"><img class="footer-social-icon" src="img/spotify.png" alt="Spotify"></a>
+                                <a href = "#"><img class="footer-social-icon" src="img/s-2.png" alt="s2?"></a>
+                                <a href = "#"><img class="footer-social-icon" src="img/s-3.png" alt="s3?"></a>
+                                <a href = "#"><img class="footer-social-icon" src="img/s-4.png" alt="s4?"></a>
+                                <a href = "#"><img class="footer-social-icon" src="img/s-5.png" alt="s5?"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
     <script src="script.js"></script>

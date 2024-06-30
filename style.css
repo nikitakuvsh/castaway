@@ -73,9 +73,11 @@ header {
 }
 
 .logo {
+    text-decoration: none;
     font-size: 33px;
     float: left;
     font-weight: 800;
+    color: white;
 }
 
 .header-nav {
@@ -465,3 +467,63 @@ header {
     width: 18px;
     height: 17px;
 }
+footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company {flex: 1;}
+
+.footer-link {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    margin-right: 239px;
+}
+
+.social-footer-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-nav {
+    margin-left: 20px;
+}
+
+.footer-nav-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.social-footer {margin-top: 10px;}
+.footer-license {margin-left: 149px;}
+
+.footer-social-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 17px;
+}
+
+.footer-social {margin-left: 240px;}
