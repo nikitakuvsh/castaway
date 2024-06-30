@@ -127,7 +127,10 @@ header {
     background-repeat: no-repeat;
 }
 
-.main-content {display: inline-flex;}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
 
 .right-main-content {
     align-content: center;
@@ -294,4 +297,171 @@ header {
     line-height: 27px;
 }
 
- 
+.about-host {
+    margin-right: 60px;
+    align-content: center;
+}
+
+ .meet-host {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 260px;
+    margin-bottom: 200px;
+ }
+
+.meet-your-host {
+    width: 112px;
+    height: 112px;
+    border-radius: 400px;
+    background-color: #118DA8;
+    border: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.meet-your-host-link {
+    text-decoration: none;
+    color: #118DA8;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.name-host {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 79px;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 28px;
+}
+
+.host-descr {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFFB2;
+    margin-bottom: 33px;
+}
+
+.host-img {
+    width: 650px;
+    height: 743px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.subscription {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px; /* 76 */
+    background-color: #000000;
+    border-radius: 32px;
+    padding: 60px 60px 0 60px;
+    margin-bottom: 200px;
+}
+
+.descr-container {max-width: 660px;}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.mail-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #118DA8;
+}
+
+.subscription-title {
+    color: white;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 79px;
+    letter-spacing: 3px;
+    margin-bottom: 143px;
+}
+
+.input-subscr {
+    border: 1px solid #191919;
+    background-color: #191919;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 522px;
+    max-height: 82px;
+    padding: 26px 0 26px 19px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFFB2;
+    margin-bottom: 20px;
+}
+
+.button-subscr {
+    display: block;
+    width: 87px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #118DA8;
+    color: #FFFFFFB2;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 29px;
+    padding: 9px 17px 10px 17px;
+    border: none;
+}
+
+.blue-bars-under {
+    position: absolute;
+    top: 322px;
+    left: -38px;
+    width: 147px;
+    height: 91px;
+    background: url('img/blue-bars-down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reviews-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.review {
+    padding: 54px 50px 50px 50px;
+    /* max-width: 423px; */
+    max-width: calc(33.33% - 16px);
+    min-height: 321px;
+    border-radius: 32px;
+    background-color: black;
+    flex: 1 1 calc(33.33% - 16px);
+    box-sizing: border-box;
+}
+
+.comments {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+    margin-bottom: 19px;
+    margin-top: 21px;
+}
+
+.author {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFFB2;
+}
+
+.rating-star {
+    width: 18px;
+    height: 17px;
+}
